@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    margin-bottom: 50px;
+    font-size: 3rem;
+    line-height: 3rem;
+    color: #fff;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 50px;
+    font-size: 2rem;
+    line-height: 2rem;
+    color: #fff;
+    text-align: center;
+}
+
+body {
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+button,
+.button {
+    padding: 10px 30px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    display: block;
+    transition: background 0.4s linear, color 0.4s linear;
+}
+
+.button:hover,
+button:hover {
+    background-color: #fff;
+    color: #051937;
+}
+
+.new-quote {
+    margin-top: 25px;
+    padding: 7px;
+    background: transparent;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.new-quote:after {
+    content: "";
+    height: 400%;
+    width: 200%;
+    display: block;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0);
+    z-index: 0;
+    animation: gradient 2s linear infinite;
+}
+
+@keyframes gradient {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);;
+    }
+}
+
+.new-quote span {
+    padding: 6px 12px;
+    background-color: #fff;
+    position: relative;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgb(4 38 72);
+    font-weight: 600;
+    display: block;
+    z-index: 1;
+}
+
+/* Modal Generator CSS */
+.modal-wrapper{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+}
+.modal-wrapper.active{
+    display: block;
+}
+.modal-body{
+    padding: 30px 20px;
+    border-radius: 2px;
+    background-color: #fff;
+    max-width: 800px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+    color: #051937;
+}
+.modal-wrapper.active .modal-body{
+    animation: animationModal 0.4s ease-in-out;
+}
+
+@keyframes animationModal {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.close-btn{
+    padding: 23px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 0px;
+    position: absolute;
+    top: -1px;
+    right: 0px;
+    cursor: pointer;
+    z-index: 10;
+}
+.close-btn i{
+    font-size: 18px;
+    line-height: 22px;
+    color: rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Links CSS */
+.demo-link {
+    padding: 15px 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0px;
+}
+
+.demo-link a {
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.demo-link a:hover {
+    color: #a8eb12;
+}

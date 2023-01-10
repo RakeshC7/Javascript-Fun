@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>DOM Manipulation : Event Propagation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/event-propagation.css">
+    </head>
+    <body>
+
+        <!----- Event Propagation ----->
+        <!-- 3 phases -->
+
+        <!-- 1.Event Capturing
+        2. Target
+        3. Event Bubling  -->
+        <h2 id="main-heading">Event Propagation</h2>
+        <div class="boxes div2">
+            2
+            <div class="boxes div1">
+                1
+                <!-- <button type="button" class="d-block">click</button> -->
+                <a href="#" class="link button">Button</a>
+            </div>
+        </div>
+        <div class="demo-link">
+            <a class="prev demo" href="eventlisteners-2.html">< Event Listeners - 2</a>
+            <a class="next-demo" href="event-delegation.html">Event Delegation ></a>
+        </div>
+    </body>
+    <script src="js/event-propagation.js" async defer></script>
+</html>

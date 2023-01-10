@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>DOM Manipulation : Event Propagation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/event-delegation.css">
+    </head>
+    <body>
+
+        <!----- Event Propagation ----->
+        <!-- 3 phases -->
+
+        <!-- 1.Event Capturing
+        2. Target
+        3. Event Bubling  -->
+        <h2 id="main-heading">Event Delegation</h2>
+        <div class="boxes">
+            <ul class="ul-box">
+                <li id="football">Football</li>
+                <li id="basketball">Basketball</li>
+                <li id="boxing">Boxing</li>
+                <li id="tennis">Tennis</li>
+                <li id="golf">Golf</li>
+            </ul>
+        </div>
+        <div class="demo-link">
+            <a class="prev demo" href="event-propagation.html">< Event Propagation</a>
+            <a class="next-demo" href="quote-generator.html">Quote Generator ></a>
+        </div>
+    </body>
+    <script src="js/event-delegation.js" async defer></script>
+</html>

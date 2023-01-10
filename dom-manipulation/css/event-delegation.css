@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+h2{
+    margin-bottom: 50px;
+    font-size: 3rem;
+    line-height: 3rem;
+    color: #fff;
+    text-align: center;
+}
+h1{
+    margin-bottom: 50px;
+    font-size: 2rem;
+    line-height: 2rem;
+    color: #fff;
+    text-align: center;
+}
+body{
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.boxes{
+    padding: 10px;
+    border: 2px solid #fff;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+}
+button, .button{
+    padding: 10px 30px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    display: block;
+    transition: background 0.4s linear, color 0.4s linear;
+}
+.button:hover,
+button:hover{
+    background-color: #fff;
+    color: #051937;
+}
+.ul-box{
+    padding: 10px;
+    list-style: none;
+}
+.ul-box > li{
+    margin-bottom: 10px;
+    padding: 5px 20px;
+    border: 2px solid #fff;
+}
+
+/* Links CSS */
+.demo-link{
+    padding: 15px 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0px;
+}
+.demo-link a{
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+.demo-link a:hover{
+    color: #a8eb12;
+}

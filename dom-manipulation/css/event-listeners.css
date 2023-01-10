@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+h2{
+    margin-bottom: 50px;
+    font-size: 3rem;
+    line-height: 3rem;
+    color: #fff;
+    text-align: center;
+}
+h1{
+    margin-bottom: 50px;
+    font-size: 2rem;
+    line-height: 2rem;
+    color: #fff;
+    text-align: center;
+}
+body{
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    display: flex;
+    column-gap: 20px;
+    justify-content: center;
+}
+.boxes{
+    padding: 40px 20px;
+    border: 2px solid #fff;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+}
+.boxes > h1{
+    margin-bottom: 40px;
+}
+button{
+    background-color: transparent;
+    border: 2px solid #fff;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    padding: 10px 30px;
+    transition: background 0.4s linear, color 0.4s linear;
+}
+button:hover{
+    background-color: #fff;
+    color: #051937;
+}
+
+/* hidden content */
+.hidden-content{
+    display: none;
+}
+
+.content-block{
+    max-width: 400px;
+}
+
+.visible-content{
+    display: block;
+}
+
+/* Links CSS */
+.demo-link{
+    padding: 15px 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0px;
+}
+.demo-link a{
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+.demo-link a:hover{
+    color: #a8eb12;
+}

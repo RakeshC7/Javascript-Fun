@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DOM Manipulation : Stop Watch</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- font Awasome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/stop-watch.css">
+</head>
+
+<body>
+    <div class="stop-watch-wrap">
+        <div class="stop-watch-inner-wrap">
+            <span class="timer" id="stop-watch-timer">00 : 00 : 00</span>
+        </div>
+        <div class="button-wrap">
+            <button type="button" id="play-pause-btn" class="btn">
+                <i class="fas fa-play"></i>
+                <!-- <i class="fas fa-pause"></i> -->
+            </button>
+            <button type="button" id="reset-btn" class="btn">
+                <i class="fas fa-undo"></i>
+            </button>
+        </div>
+    </div>
+    <div class="demo-link">
+        <a class="prev demo" href="accordian.html"> < Accordian Demo</a>
+        <a class="next-demo" href="to-do-list.html">To - do List Demo></a>
+    </div>
+</body>
+<script src="js/stop-watch.js" async defer></script>
+
+</html>

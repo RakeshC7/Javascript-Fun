@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+/* Variable Define */
+:root{
+    --sidebar-width: 450px;
+}
+
+/* Common CSS */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    font-size: 20px;
+    line-height: 3rem;
+    color: #dddbdb;
+    text-align: center;
+}
+
+h1 {
+    margin: 1rem 0px 1rem;
+    padding: 0px 0px 1.5rem;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    color: #000;
+    text-align: center;
+    position: relative;
+
+}
+h1:after{
+    content: "";
+    height: 3px;
+    width: calc(100% - 20px);
+    display: block;
+    background-color: #f4f4f4;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+body {
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    width: calc(100% - var(--sidebar-width));
+    display: flex;
+    column-gap: 20px;
+    justify-content: center;
+}
+
+button {
+    padding: 10px 30px;
+    border: 2px solid #fff;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.4s linear, border-color 0.4s linear , color 0.4s linear;
+}
+
+button:hover {
+    background-color: #041c3b;
+    border-color: #041c3b;
+    color: #ffffff;
+}
+
+.to-do-form input {
+    padding: 12px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #000;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.to-do-form input::-webkit-input-placeholder {
+    color: rgb(135, 135, 135);
+}
+
+.to-do-form input::-moz-placeholder {
+    color: rgb(135, 135, 135);
+}
+
+.to-do-form input:-ms-input-placeholder {
+    color: rgb(135, 135, 135);
+}
+
+/* Links CSS */
+.demo-link {
+    padding: 15px 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0px;
+}
+
+.demo-link a {
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.demo-link a:hover {
+    color: #a8eb12;
+}
+
+/* Sidebar */
+#sidebar{
+    height: 100%;
+    width: var(--sidebar-width);
+    background-color: #fff;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+#sidebar ul{
+    padding: 10px;
+    list-style: none;
+}
+#sidebar ul li{
+    margin-bottom: 10px;
+    padding: 12px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+#sidebar ul li span{
+    font-size: 20px;
+    line-height: 24px;
+    color: #000;
+    font-weight: 500;
+    position: relative;
+}
+#sidebar ul li span:before{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 0px;
+    background-color: #000;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: width 0.3s linear;
+}
+#sidebar ul li span.completed:before{
+    width: 100%;
+}
+.button-wrap{
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+}
+.button-wrap button{
+    border: none;
+    padding: 0px;
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+}
+.button-wrap button i{
+    color: #051937;
+    font-size: 18px;
+    line-height: 22px;
+}
+.button-wrap .check-btn{
+    background-color: #92f48f;
+}
+.button-wrap .cancel-btn{
+    background-color: #febac4;
+}
